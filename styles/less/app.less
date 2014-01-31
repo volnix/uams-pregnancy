@@ -7,6 +7,7 @@ body {
 	background-image: url(/img/background.png);
 	background-position: bottom;
 	background-repeat: repeat;
+	color: white;
 }
 
 #header {
@@ -36,7 +37,7 @@ body {
 		line-height: 100px;
 		font-weight: bold;
 		margin-left: 40px;
-		.Scale(2em);
+		.Scale(1.5em);
 		
 		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 			margin-left: 5px;
@@ -45,6 +46,68 @@ body {
 	
 	background-image: url(/img/header-bg2.png);
 	background-repeat: repeat;
+}
+
+div.content-block {
+	div.col-xs-6 {
+		text-align: center;
+	}
+	
+	border-radius: 10px;
+	margin: 40px;
+	
+	@media (max-width: @screen-sm-max) {
+		margin: 20px;
+	}
+	
+	border: 1px solid black;
+	background-image: url(/img/content-bg.png);
+	background-position: bottom;
+	background-repeat: repeat;
+	
+	p.content-header {
+		color: white;
+		.Scale(1.5em);
+		text-align: center;
+		font-weight: bold;
+	}
+	
+	p.content-description {
+		color: #ababab;
+		.Scale(1.2em);
+	}
+	
+	table.content-table {
+		border: 1px solid #ababab;
+		
+		td,tr {
+			border: 1px solid #ababab;
+		}
+		
+		.big-header {
+			font-weight: bold;
+			.Scale(1.4em);
+		}
+		
+		.small-header {
+			font-weight: bold;
+			.Scale(1.2em);
+		}
+		
+		.Scale(1.1em);
+	}
+}
+
+#btn-block {
+	margin-top: 160px;
+	
+	.med-types {
+		@media (max-width: @screen-sm-max) {
+
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+	}
 }
 
 @media (max-width: @screen-sm-max) {

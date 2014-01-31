@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 	    <title>UAMS OTC Pregnancy Medication Guide</title>
 	    <meta name="description" content="This site serves as a guide to OTC medications that can and cannot be taken during pregnancy and lactation."/>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta name="author" content="NV Web Design"/>
 	    
 	    <!-- styles -->
@@ -20,7 +20,7 @@
 	    
 	   <!-- bootstrap js -->
 	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 	   
 	   <style>
 			@-webkit-viewport   { width: device-width; }
@@ -46,10 +46,353 @@
 		<header id="header" class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
 			<div class="container">
 				<div class="navbar-header">
-					<img src="/img/APhA-logo.png" class="navbar-brand img-responsive"/>
+					<img src="/img/APhA-logo.png" class="navbar-brand img-responsive hidden-xs"/>
 					<p id="menu-title" class="navbar-brand">OTC Pregnancy Medication Guide</a>
 				</div>
 			</div>
 		</header>
+		
+		<div class="well content-block" id="btn-block">
+			<p class="content-description">It is always best to limit medication use during pregnancy if possible, especially during the first trimester.  If medication is needed it is best to be conservative with dosing/frequency.</p>
+			<div class="row">
+				<div class="col-sm-6 med-types">
+					<p class="content-header">OTC Medications in Pregnancy</p>
+					<select id="pregnancy-drugs" class="form-control">
+						<option default>Choose a Category</option>
+						<option value="preg-pain">Pain Relief, Headache, & Fever</option>
+						<option value="preg-heartburn">Heartburn, Gas, & Upset Stomach</option>
+						<option value="preg-cough">Cough, Cold, & Sore Throat</option>
+						<option value="preg-allergy">Allergy</option>
+						<option value="preg-nausea">Nausea</option>
+						<option value="preg-poo">Constipation, Hemorrhoids, Diarrhea</option>
+						<option value="preg-yeast">Yeast infections/other fungal infections</option>
+						<option value="preg-muscle">Muscle Rubs/ Creams</option>
+						<option value="preg-itch">Itching</option>
+						<option value="preg-other">Other</option>
+					</select>
+				</div>
+				<div class="col-sm-6 med-types">
+					<p class="content-header">OTC Medications During Lactation</p>
+					<select id="lactation-drugs" class="form-control">
+						<option default>Choose a Category</option>
+						<option value="lact-pain">Pain Relief, Headache, & Fever</option>
+						<option value="lact-heartburn">Heartburn, Gas, & Upset Stomach</option>
+						<option value="lact-cough">Cough, Cold, & Sore Throat</option>
+						<option value="lact-allergy">Allergy</option>
+						<option value="lact-nausea">Nausea</option>
+						<option value="lact-poo">Constipation, Hemorrhoids, Diarrhea</option>
+						<option value="lact-yeast">Yeast infections/other fungal infections</option>
+						<option value="lact-muscle">Muscle Rubs/ Creams</option>
+						<option value="lact-itch">Itching</option>
+						<option value="lact-nicotine">Nicotine</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		
+		<div class="well content-block" id="drug-container">
+			
+			
+			
+			<!-- pregnancy drugs -->
+			
+			
+			<table class="table table-bordered table-condensed content-table preg-drug" id="preg-pain">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Pain Relief, Headache, & Fever</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Tylenol Regular Strength (325mg)</td><td>2 Tablets every 4-6 hours</td><td>10 tablets/day</td></tr>
+					<tr><td>Tylenol Extra Strength (500mg)</td><td>2 caplets every 6 hours</td><td>6 caplets/day</td></tr>
+					<tr><td>Acetaminophen</td><td>325-650mg every 4-6 hours OR 1000mg<br/>3-4 times daily</td><td>4 grams/day</td></tr>
+					<tr><td colspan="3"><b>DO NOT USE:</b>  Products containing aspirin, ibuprofen, or naproxen.</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table preg-drug" id="preg-heartburn">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Heartburn, Gas, & Upset Stomach</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Maalox Regular Strength Chewable</td><td>Chew 1-2 tablets as needed</td><td>12 tablets/day</td></tr>
+					<tr><td>Maalox Regular Strength Advanced</td><td>2-4 teaspoonfuls as needed</td><td>16 teaspoonfuls/day</td></tr>
+					<tr><td>Maalox Advanced Maximum Strength</td><td>2-4 teaspoonfuls as needed</td><td>8 teaspoonfuls/day</td></tr>
+					<tr><td>Mylanta Regular Strength</td><td>2-4 teaspoonfuls as needed</td><td>24 teaspoonfuls/day</td></tr>
+					<tr><td>Mylanta Maximum Strength</td><td>2-4 teaspoonfuls as needed</td><td>12 teaspoonfuls/day</td></tr>
+					<tr><td>Mylanta Gas Maximum Strength</td><td>Chew 1-2 tablets as needed</td><td>4 tablets/day</td></tr>
+					<tr><td>Rolaids Regular/Extra Strength</td><td>Chew 2-4 tablets as needed</td><td>12 tablets/day</td></tr>
+					<tr><td>TUMS Regular Strength</td><td>Chew 2-4 tablets as needed</td><td>15 tablets/day</td></tr>
+					<tr><td>TUMS Extra 750</td><td>Chew 2-4 tablets as needed</td><td>10 tablets/day</td></tr>
+					<tr><td>TUMS Ultra 1000</td><td>Chew 2-3 tablets as needed</td><td>7 tablets/day</td></tr>
+					<tr><td>Gaviscon Regular Strength</td><td>Chew 2-4 tablets as needed</td><td>16 tablets/day</td></tr>
+					<tr><td>Gas-X Chewables Regular Strength</td><td>Chew 1-2 tablets as needed</td><td>6 tablets/day</td></tr>
+					<tr><td>Gas-X Softgels Extra Strength</td><td>1-2 softgels as needed</td><td>4 softgels/day</td></tr>
+					<tr><td>Gas-X Softgels Ultra Strength</td><td>1-2 softgels as needed</td><td>2 softgels/day</td></tr>
+					<tr><td>Mytab</td><td>Chew 1-2 tablets as needed</td><td>6 tablets/day</td></tr>
+					<tr><td colspan="3"><b>DO NOT USE:</b>  Products containing bismuth subsalicylate.  Ask doctor about use of PPIs or H2 blockers.</td>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table preg-drug" id="preg-cough">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Cough, Cold, & Sore Throat</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Mucinex</td><td>1-2 tablets every 12 hours</td><td>4 tablets/day</td></tr>
+					<tr><td>Mucinex DM</td><td>1-2 tablets every 12 hours</td><td>4 tablets/day</td></tr>
+					<tr><td>Robitussin Mucus + Chest Congestion*</td><td>2-4 teaspoonfuls every 4 hours</td><td>6 doses/day</td></tr>
+					<tr><td>Robitussin Cough + Chest Congestion DM*</td><td>2 teaspoonfuls every 4 hours</td><td>6 doses/day</td></tr>
+					<tr><td>Cough Drops</td><td></td><td></td></tr>
+					<tr><td>Delsym Cough Syrup*</td><td>10 mls (2 teaspoons) every 12 hours</td><td>20 mls/day</td></tr>
+					<tr><td>Vicks 44*</td><td>15 mls (3 teaspoons) every 6 hours</td><td>4 doses/day</td></tr>
+					<tr><td>Afrin Nasal Spray</td><td>2 or 3 sprays in each nostril (no more often than every 10-12 hours)</td><td>2 doses/day</td></tr>
+					<tr><td>Simply Saline</td><td>Use in each nostril as needed</td><td></td></tr>
+					<tr><td>Corcidin HBP Cough & Cold</td><td>1 tablet every 6 hours </td><td>4 tablets/day</td></tr>
+					<tr><td>Corcidin HBP Cold & Flu</td><td>2 tablets every 4-6 hours</td><td>12 tablets/day</td></tr>
+					<tr><td>Corcidin HBP Chest Congestion & Cough</td><td>1-2 softgels every 4 hours</td><td>12 softgels/day</td></tr>
+					<tr><td colspan="3"><b>DO NOT USE:</b> Ask doctor about pseudoephedrine, phenylephrine, and sore throat products (Cepacol, Chloraseptic Spray) before use.<br/>*Some syrup formulations contain alcohol and should not be used during pregnancy.</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table preg-drug" id="preg-allergy">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Allergy</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Chlor-Trimeton Allergy</td><td>1 tablet every 4-6 hours</td><td>6 tablets/day</td></tr>
+					<tr><td>Claritin</td><td>1 tablet daily</td><td>1 tablet/day</td></tr>
+					<tr><td>Zyrtec</td><td>1 tablet daily</td><td>1 tablet/day</td></tr>
+					<tr><td>Alavert</td><td>1 tablet daily</td><td>1 tablet/day</td></tr>
+					<tr><td>Benadryl (25mg)</td><td>1-2 tablets every 4-6 hours</td><td>6 doses/day</td></tr>
+					<tr><td colspan="3"><b>DO NOT USE:</b> Allegra, brompheniramine.</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table preg-drug" id="preg-nausea">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Nausea</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Emetrol</td><td>1 or 2 tablespoons every 15 minutes</td><td>5 doses/day</td></tr>
+					<tr><td>Dramamine</td><td>1-2 tablets every 4-6 hours </td><td>8 tablets/day</td></tr>
+					<tr><td>Meclizine (25mg)</td><td>1-2 tablets once daily</td><td></td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table preg-drug" id="preg-poo">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Constipation, Hemorrhoids, Diarrhea</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Phillip's Milk of Magnesia</td><td>30-60 milliliters once daily</td><td>60 milliliters/day</td></tr>
+					<tr><td>Miralax**</td><td>Stir and dissolve one capful into 4-8 oz of water and drink daily</td><td>For short term use</td></tr>
+					<tr><td>Metamucil</td><td>Dissolve 1 rounded tablespoon in 8 oz of cold water, up to 3 times daily</td><td></td></tr>
+					<tr><td>Citrucel</td><td>Dissolve 1 leveled scoop in 8 oz of cold water, up to 3 times daily</td><td></td></tr>
+					<tr><td>Benefiber</td><td>Stir 2 tsp in 4-8 oz of water 3 times daily</td><td></td></tr>
+					<tr><td>Colace Capsules (100mg)</td><td>1-3 capsules daily</td><td></td></tr>
+					<tr><td>Senokot**</td><td>2 tablets once a day</td><td>4 tablets/twice a day</td></tr>
+					<tr><td>Dulcolax**</td><td>1-3 tablets in a single daily dose with glass of water</td><td></td></tr>
+					<tr><td>Preparation H</td><td>Apply to the affected area up to 4 times daily</td><td></td></tr>
+					<tr><td>Tucks</td><td>Apply pad to the affected area up to 6 times daily</td><td></td></tr>
+					<tr><td colspan="3"><b>DO NOT USE:</b> Should contact doctor before use of Imodium.<br/>**These medicines are for short term use.</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table preg-drug" id="preg-yeast">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Yeast infections/other fungal infections</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Lotrimin AF</td><td>Apply a thin layer to affected area twice daily</td><td></td></tr>
+					<tr><td>Lotrimin Ultra</td><td>Apply twice a day</td><td></td></tr>
+					<tr><td>Lamisil AT</td><td>Apply twice a day</td><td></td></tr>
+					<tr><td>Monistat 1</td><td>Place vaginal insert in vagina using applicator; may apply cream topically to vaginal area twice daily up to 7 days</td><td></td></tr>
+					<tr><td>Monistat 3</td><td>Place vaginal insert in vagina using applicator daily for 3 days; may apply cream topically to vaginal area twice daily up to 7 days</td><td></td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table preg-drug" id="preg-muscle">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Muscle Rubs/ Creams</td></tr>
+					<tr><td colspan="3">Should contact doctor before use of any muscle rubs/cream products</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table preg-drug" id="preg-itch">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Itching</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Cortaid</td><td>Apply to affect area no more than 3-4 times a day</td><td></td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table preg-drug" id="preg-other">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Other</td></tr>
+					<tr><td colspan="3"><b>Other medications to avoid:</b> Products containing caffeine, castor oil, nicotine products.</td></tr>
+				</tbody>
+			</table>
+			
+			
+			
+			<!-- lactation drugs -->
+			
+			
+			
+			
+			<table class="table table-bordered table-condensed content-table lact-drug" id="lact-pain">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Pain Relief, Headache, & Fever</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Tylenol Regular Strength (325mg)</td><td>2 tablets every 4-6 hours</td><td>10 tablets/day</td></tr>
+					<tr><td>Tylenol Extra Strength (500mg)</td><td>2 caplets every 6 hours</td><td>6 caplets/day</td></tr>
+					<tr><td>Acetaminophen</td><td>325 – 650mg every 4-6 hours OR 1000mg 3-4 times daily</td><td>4 grams/day</td></tr>
+					<tr><td>Motrin IB</td><td>1 tablet every 4-6 hours; may take 2 tablets if needed</td><td>6 tablets/day</td></tr>
+					<tr><td>Advil</td><td>1 tablet every 4-6 hours; may take 2 tablets if needed</td><td>6 tablets/day</td></tr>
+					<tr><td>Ibuprofen (200mg)</td><td>200mg every 4-6 hours as needed</td><td>1200mg/day</td></tr>
+					<tr><td colspan="3"><b>DO NOT USE:</b>  Products containing aspirin.  Naproxen should be used with caution due to long half-life.</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table lact-drug" id="lact-heartburn">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Heartburn, Gas, & Upset Stomach</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Maalox Regular Strength Chewable</td><td>Chew 1-2 tablets as needed</td><td>12 tablets/day</td></tr>
+					<tr><td>Maalox Regular Strength Advanced</td><td>2-4 teaspoonfuls as needed</td><td>16 teaspoonfuls/day</td></tr>
+					<tr><td>Maalox Advanced Maximum Strength</td><td>2-4 teaspoonfuls as needed</td><td>8 teaspoonfuls/day</td></tr>
+					<tr><td>Mylanta Regular Strength</td><td>2-4 teaspoonfuls as needed</td><td>24 teaspoonfuls/day</td></tr>
+					<tr><td>Mylanta Maximum Strength</td><td>2-4 teaspoonfuls as needed</td><td>12 teaspoonfuls/day</td></tr>
+					<tr><td>Mylanta Gas Maximum Strength</td><td>Chew 1-2 tablets as needed</td><td>4 tablets/day</td></tr>
+					<tr><td>Rolaids Regular/Extra Strength</td><td>Chew 2-4 tablets as needed</td><td>12 tablets/day</td></tr>
+					<tr><td>TUMS Regular Strength</td><td>Chew 2-4 tablets as needed</td><td>15 tablets/day</td></tr>
+					<tr><td>TUMS Extra 750</td><td>Chew 2-4 tablets as needed</td><td>10 tablets/day</td></tr>
+					<tr><td>TUMS Ultra 1000</td><td>Chew 2-3 tablets as needed</td><td>7 tablets/day</td></tr>
+					<tr><td>Gaviscon Regular Strength</td><td>Chew 2-4 tablets as needed</td><td>16 tablets/day</td></tr>
+					<tr><td>Gas-X Chewables Regular Strength</td><td>Chew 1-2 tablets as needed</td><td>6 tablets/day</td></tr>
+					<tr><td>Gas-X Softgels Extra Strength</td><td>1-2 softgels as needed</td><td>4 softgels/day</td></tr>
+					<tr><td>Gas-X Softgels Ultra Strength</td><td>1-2 softgels as needed</td><td>2 softgels/day</td></tr>
+					<tr><td>Mytab</td><td>Chew 1-2 tablets as needed</td><td>6 tablets/day</td></tr>
+					<tr><td>Lactaid</td><td>1-2 capsules with milk or meal</td><td></td></tr>
+					<tr><td>Zantac 75</td><td>1 tablet with glass of water; may be used twice daily</td><td>2 tablets/day</td></tr>
+					<tr><td colspan="3"><b>DO NOT USE:</b>  Products containing bismuth subsalicylate.  Ask doctor about the use of PPI’s or other H2 Antagonists.</td>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table lact-drug" id="lact-cough">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Cough, Cold, & Sore Throat</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Mucinex#</td><td>1-2 tablets every 12 hours</td><td>4 tablets/day</td></tr>
+					<tr><td>Mucinex DM#</td><td>1-2 tablets every 12 hours</td><td>4 tablets/day</td></tr>
+					<tr><td>Robitussin Mucus + Chest Congestion*#</td><td>2-4 teaspoonfuls every 4 hours</td><td>6 doses/day</td></tr>
+					<tr><td>Robitussin Cough + Chest Congestion DM*#</td><td>2 teaspoonfuls every 4 hours</td><td>6 doses/day</td></tr>
+					<tr><td>Cough Drops</td><td></td><td></td></tr>
+					<tr><td>Delsym Cough Syrup*#</td><td>10mls every 12 hours</td><td>20mls/day</td></tr>
+					<tr><td>Vicks 44*#</td><td>15mls every 6 hours</td><td>4 doses/day</td></tr>
+					<tr><td>Afrin Nasal Spray</td><td>2 or 3 sprays in each nostril (no more often than every 10-12 hours)</td><td>2 doses/day</td></tr>
+					<tr><td>Simply Saline</td><td>Use in each nostril as needed</td><td></td></tr>
+					<tr><td>Coricidin HBP Cough & Cold#</td><td>1 tablet every 6 hours</td><td>4 tablets/day</td></tr>
+					<tr><td>Coricidin HBP Cold & Flu#</td><td>2 tablets every 4-6 hours</td><td>12 tablets/day</td></tr>
+					<tr><td>Coricidin HBP Chest Congestion & Cough#</td><td>1 or 2 softgels every 4 hours</td><td>12 softgels/day</td></tr>
+					<tr><td>Cepacol Lozenges</td><td>Allow lozenge to dissolve slowly in the mouth; may repeat every 2 hours as needed</td><td></td></tr>
+					<tr><td colspan="3"><b>DO NOT USE:</b> Ask doctor about pseudoephedrine or phenylephrine use during lactation.  Pseudoephedrine may decrease milk supply and excretion of phenylephrine into breast milk is unknown.<br/>*Some syrup formulations contain alcohol and should not be used during lactation.<br/>#The excretion of guaifenasin and dextromethorphan into breast milk is unknown.  Products containing these should be used with caution.</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table lact-drug" id="lact-allergy">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Allergy</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Chlor-Trimeton Allergy</td><td>1 tablet every 4-6 hours</td><td>6 tablets/day</td></tr>
+					<tr><td>Claritin</td><td>1 tablet daily</td><td>1 tablet/day</td></tr>
+					<tr><td>Zyrtec</td><td>1 tablet daily</td><td>1 tablet/day</td></tr>
+					<tr><td>Alavert</td><td>1 tablet daily</td><td>1 tablet/day</td></tr>
+					<tr><td colspan="3"><b>CAUTION:</b> All of the sedating antihistamines have the possibility of causing sedation in the infant and/or decreasing milk supply.</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table lact-drug" id="lact-nausea">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Nausea</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Emetrol</td><td>1 or 2 tablespoons every 15 minutes</td><td>5 doses</td></tr>
+					<tr><td>Meclizine (25mg)*</td><td>1-2 tablets once daily</td><td></td></tr>
+					<tr><td colspan="3"><b>DO NOT USE:</b> Dramamine is not recommended.  *Excretion into breast milk is unknown.  Use caution.</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table lact-drug" id="lact-poo">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Constipation, Hemorrhoids, Diarrhea</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Phillip's Milk of Magnesia</td><td>30-60 milliliters once daily</td><td>60 milliliters/day</td></tr>
+					<tr><td>Miralax*</td><td>Stir and dissolve one capful into 4-8oz of water and drink daily</td><td>For short term use</td></tr>
+					<tr><td>Metamucil</td><td>Dissolve 1 rounded tablespoon in 8 oz of cold water, up to 3 times daily</td><td></td></tr>
+					<tr><td>Citrucel</td><td>Dissolve 1 leveled scoop in 8 oz of cold water, up to 3 times daily</td><td></td></tr>
+					<tr><td>Benefiber</td><td>Stir 2 tsp in 4-8 oz of water 3 times daily</td><td></td></tr>
+					<tr><td>Colace Capsules (100mg)</td><td>1-3 capsules daily</td><td></td></tr>
+					<tr><td>Senokot</td><td>2 tablets once a day</td><td>4 tablets/twice a day</td></tr>
+					<tr><td>Dulcolax</td><td>1-3 tablets in a single daily dose with glass of water</td><td></td></tr>
+					<tr><td>Preparation H*</td><td>Apply to the affected area up to 4 times daily</td><td></td></tr>
+					<tr><td>Tucks</td><td>Apply pad to the affected area up to 6 times daily</td><td></td></tr>
+					<tr><td colspan="3"><b>DO NOT USE:</b> Excretion of Imodium into breast milk is unknown.  The manufacturer recommends against use. <br/>*Excretion into breast milk is unknown.  Use caution.</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table lact-drug" id="lact-yeast">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Yeast infections/other fungal infections</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td colspan="3">Excretion of most OTC antifungal creams/ointments into breast milk is unknown.  Use caution.</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table lact-drug" id="lact-muscle">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Muscle Rubs/ Creams</td></tr>
+					<tr><td colspan="3">Most products containing menthol have minimal systemic absorption, but should be used with caution.</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table lact-drug" id="lact-itch">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Itching</td></tr>
+					<tr class="small-header"><td>Product</td><td>Dose</td><td>Maximum</td></tr>
+					<tr><td>Cortaid*</td><td>Apply to affect area no more than 3-4 times a day</td><td></td></tr>
+					<tr><td colspan="3">*Hydrocortisone should be used with caution.  Do not apply to nipples.  Benzocaine’s excretion into breast milk is unknown.  Use caution.</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table lact-drug" id="lact-nicotine">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Nicotine</td></tr>
+					<tr><td colspan="3">Women who are breastfeeding are encouraged not to smoke.  The amount of nicotine from nicotine replacement products into breast milk is unknown.  Use with caution.</td></tr>
+				</tbody>
+			</table>
+			
+			
+			
+		</div>
+		
 	</body>
+	
+	<script>
+		$(document).ready( function () {
+		
+			$('#drug-container').hide();
+		
+			$('#pregnancy-drugs').change( function() {
+				$('.content-table').hide();
+				$('.lact-drug').hide();
+				$('#drug-container').show();
+				$("#" + $(this).val()).show();
+				$("html, body").animate({ scrollTop: $("#" + $(this).val()).offset().top - 130 }, 500);
+			});
+		
+			$('#lactation-drugs').change( function() {
+				$('.content-table').hide();
+				$('.preg-drug').hide();
+				$('#drug-container').show();
+				$("#" + $(this).val()).show();
+				$("html, body").animate({ scrollTop: $("#" + $(this).val()).offset().top - 130 }, 500);
+			});
+			
+			$('.content-table').hide();
+			
+		});
+	</script>
 </html>
