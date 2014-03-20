@@ -55,7 +55,7 @@
 		<div class="well content-block" id="btn-block">
 			<p class="content-description">It is always best to limit medication use during pregnancy if possible, especially during the first trimester.  If medication is needed it is best to be conservative with dosing/frequency.</p>
 			<div class="row">
-				<div class="col-sm-6 med-types">
+				<div class="col-sm-4 med-types">
 					<p class="content-header">OTC Medications in Pregnancy</p>
 					<select id="pregnancy-drugs" class="form-control">
 						<option default>Choose a Category</option>
@@ -71,7 +71,7 @@
 						<option value="preg-other">Other</option>
 					</select>
 				</div>
-				<div class="col-sm-6 med-types">
+				<div class="col-sm-4 med-types">
 					<p class="content-header">OTC Medications During Lactation</p>
 					<select id="lactation-drugs" class="form-control">
 						<option default>Choose a Category</option>
@@ -85,6 +85,23 @@
 						<option value="lact-muscle">Muscle Rubs/ Creams</option>
 						<option value="lact-itch">Itching</option>
 						<option value="lact-nicotine">Nicotine</option>
+					</select>
+				</div>
+				<div class="col-sm-4 med-types">
+					<p class="content-header">Recommended Immunizations</p>
+					<select id="imm-drugs" class="form-control">
+						<option default>Choose a Category</option>
+						<option value="imm-hepa">Hepatitis A</option>
+						<option value="imm-hepb">Hepatitis B</option>
+						<option value="imm-hpv">Human Papillomavirus (HPV)</option>
+						<option value="imm-flu1">Influenza IIV</option>
+						<option value="imm-flu2">Influenza LAIV</option>
+						<option value="imm-mmr">MMR</option>
+						<option value="imm-men">Meningococcal (polysaccharide, conjugate)</option>
+						<option value="imm-pp">Pneumococcal Polysaccharide</option>
+						<option value="imm-tdap">Tdap</option>
+						<option value="imm-tet">Tetanus/Diphtheria Td</option>
+						<option value="imm-vari">Varicella</option>
 					</select>
 				</div>
 			</div>
@@ -365,6 +382,119 @@
 			</table>
 			
 			
+			<!-- immunizations -->
+			
+			
+			<table class="table table-bordered table-condensed content-table imm-drug" id="imm-hepa">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Hepatitis A</td></tr>
+					<tr><th><b>Before</b> Pregnancy</th><td>Yes, if indicated</td></tr>
+					<tr><th><b>During</b> Pregnancy</th><td>Yes, if indicated</td></tr>
+					<tr><th><b>After</b> Pregnancy</th><td>Yes, if indicated</td></tr>
+					<tr><th>Type of Vaccine</th><td>Inactivated</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table imm-drug" id="imm-hepb">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Hepatitis B</td></tr>
+					<tr><th><b>Before</b> Pregnancy</th><td>Yes, if indicated</td></tr>
+					<tr><th><b>During</b> Pregnancy</th><td>Yes, if indicated</td></tr>
+					<tr><th><b>After</b> Pregnancy</th><td>Yes, if indicated</td></tr>
+					<tr><th>Type of Vaccine</th><td>Inactivated</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table imm-drug" id="imm-hpv">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Human Papillomavirus (HPV )</td></tr>
+					<tr><th><b>Before</b> Pregnancy</th><td>Yes, if indicated, through 26 years of age</td></tr>
+					<tr><th><b>During</b> Pregnancy</th><td>No, under study</td></tr>
+					<tr><th><b>After</b> Pregnancy</th><td>Yes, if indicated, through 26 years of age</td></tr>
+					<tr><th>Type of Vaccine</th><td>Inactivated</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table imm-drug" id="imm-flu1">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Influenza IIV</td></tr>
+					<tr><th><b>Before</b> Pregnancy</th><td>Yes</td></tr>
+					<tr><th><b>During</b> Pregnancy</th><td>Yes</td></tr>
+					<tr><th><b>After</b> Pregnancy</th><td>Yes</td></tr>
+					<tr><th>Type of Vaccine</th><td>Inactivated</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table imm-drug" id="imm-flu2">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Influenza LAIV</td></tr>
+					<tr><th><b>Before</b> Pregnancy</th><td>Yes, if less than 50 years of age and healthy; avoid conception for 4 weeks/td></tr>
+					<tr><th><b>During</b> Pregnancy</th><td>No</td></tr>
+					<tr><th><b>After</b> Pregnancy</th><td>Yes, if less than 50 years of age and healthy; avoid conception for 4 weeks</td></tr>
+					<tr><th>Type of Vaccine</th><td>Live</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table imm-drug" id="imm-mmr">
+				<tbody>
+					<tr class="big-header"><td colspan="3">MMR</td></tr>
+					<tr><th><b>Before</b> Pregnancy</th><td>Yes, if indicated, avoid conception for 4 weeks</td></tr>
+					<tr><th><b>During</b> Pregnancy</th><td>No</td></tr>
+					<tr><th><b>After</b> Pregnancy</th><td>Yes, if indicated, give immediately postpartum if susceptible to rubella</td></tr>
+					<tr><th>Type of Vaccine</th><td>Live</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table imm-drug" id="imm-men">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Meningococcal (polysaccharide, conjugate)</td></tr>
+					<tr><th><b>Before</b> Pregnancy</th><td>If indicated</td></tr>
+					<tr><th><b>During</b> Pregnancy</th><td>If indicated</td></tr>
+					<tr><th><b>After</b> Pregnancy</th><td>If indicated</td></tr>
+					<tr><th>Type of Vaccine</th><td>Inactivated</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table imm-drug" id="imm-pp">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Pneumococcal Polysaccharide</td></tr>
+					<tr><th><b>Before</b> Pregnancy</th><td>If indicated</td></tr>
+					<tr><th><b>During</b> Pregnancy</th><td>If indicated</td></tr>
+					<tr><th><b>After</b> Pregnancy</th><td>If indicated</td></tr>
+					<tr><th>Type of Vaccine</th><td>Inactivated</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table imm-drug" id="imm-tdap">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Tdap</td></tr>
+					<tr><th><b>Before</b> Pregnancy</th><td>Yes, if indicated</td></tr>
+					<tr><th><b>During</b> Pregnancy</th><td>Yes, vaccinate during each pregnancy ideally between 27 and 36 weeks of gestation</td></tr>
+					<tr><th><b>After</b> Pregnancy</th><td>Yes, immediately postpartum, if not received previously</td></tr>
+					<tr><th>Type of Vaccine</th><td>Toxoid/inactivated</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table imm-drug" id="imm-tet">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Tetanus/Diphtheria Td</td></tr>
+					<tr><th><b>Before</b> Pregnancy</th><td>Yes, if indicated</td></tr>
+					<tr><th><b>During</b> Pregnancy</th><td>Yes, if indicated, Tdap preferred</td></tr>
+					<tr><th><b>After</b> Pregnancy</th><td>Yes, if indicated</td></tr>
+					<tr><th>Type of Vaccine</th><td>Toxoid</td></tr>
+				</tbody>
+			</table>
+			
+			<table class="table table-bordered table-condensed content-table imm-drug" id="imm-vari">
+				<tbody>
+					<tr class="big-header"><td colspan="3">Varicella</td></tr>
+					<tr><th><b>Before</b> Pregnancy</th><td>Yes, if indicated, avoid conception for 4 weeks</td></tr>
+					<tr><th><b>During</b> Pregnancy</th><td>No</td></tr>
+					<tr><th><b>After</b> Pregnancy</th><td>Yes, if indicated, give immediately postpartum if susceptible</td></tr>
+					<tr><th>Type of Vaccine</th><td>Live</td></tr>
+				</tbody>
+			</table>
+			
 			
 		</div>
 		
@@ -378,6 +508,7 @@
 			$('#pregnancy-drugs').change( function() {
 				$('.content-table').hide();
 				$('.lact-drug').hide();
+				$('.imm-drug').hide();
 				$('#drug-container').show();
 				$("#" + $(this).val()).show();
 				$("html, body").animate({ scrollTop: $("#" + $(this).val()).offset().top - 130 }, 500);
@@ -386,6 +517,16 @@
 			$('#lactation-drugs').change( function() {
 				$('.content-table').hide();
 				$('.preg-drug').hide();
+				$('.imm-drug').hide();
+				$('#drug-container').show();
+				$("#" + $(this).val()).show();
+				$("html, body").animate({ scrollTop: $("#" + $(this).val()).offset().top - 130 }, 500);
+			});
+			
+			$('#imm-drugs').change( function() {
+				$('.content-table').hide();
+				$('.preg-drug').hide();
+				$('.lact-drug').hide();
 				$('#drug-container').show();
 				$("#" + $(this).val()).show();
 				$("html, body").animate({ scrollTop: $("#" + $(this).val()).offset().top - 130 }, 500);
