@@ -6296,6 +6296,9 @@ div.content-block table.content-table .small-header {
     font-size: 1.1em;
   }
 }
+div#disclaimer {
+  padding: 20px;
+}
 #btn-block {
   margin-top: 160px;
 }
