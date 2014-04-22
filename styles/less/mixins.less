@@ -14,19 +14,41 @@
 	margin-right: @right-left;
 }
 
-.Scale(@starting_size) {
+.ScaleProperty(@property, @starting_size, @scale_step: .2, @do_on_sm: true, @do_on_md: true, @do_on_lg: true, @do_on_xl: true) {
+	
+	/* Phone */
+	.Scale(@property, @starting_size, 3, 0px, @screen-xs-max, @scale_step, @do_on_sm);
+
+	/* Tablet-portrait */
+	.Scale(@property, @starting_size, 2, @screen-sm-min, @screen-sm-max, @scale_step, @do_on_md);
+	
+	/* Tablet-landscape */
+	.Scale(@property, @starting_size, 1, @screen-md-min, @screen-md-max, @scale_step, @do_on_lg);
+	
+	/* Desktop */
+	.Scale(@property, @starting_size, 0, @screen-lg-min, 100000000px, @scale_step, @do_on_xl);
+}
+
+.Scale(@property, @starting_size, @scale_mult, @breakpoint_min, @breakpoint_max, @scale_step: .2, @do: true) when (@do = true) {
+	@media (min-width: @breakpoint_min) and (max-width: @breakpoint_max) {
+		@{property}: (@starting_size * (1 - (@scale_mult * @scale_step)));
+	}
+}
+
+
+.ScaleBig(@starting_size) {
 	@media (max-width: @screen-sm-max) {
-		font-size: .70 * @starting_size;
+		font-size: .55 * @starting_size;
 	}
 
 	/* Tablet-portrait */
 	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-		font-size: .75 * @starting_size;
+		font-size: .7 * @starting_size;
 	}
 	
 	/* Tablet-landscape */
 	@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-		font-size: .85 * @starting_size;
+		font-size: .8 * @starting_size;
 	}
 	
 	/* Desktop */
