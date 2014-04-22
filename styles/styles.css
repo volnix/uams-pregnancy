@@ -6189,7 +6189,7 @@ body {
 }
 @media (max-width: 767px) {
   #header #menu-title {
-    margin: 0xp;
+    margin: 0px;
   }
 }
 div.content-block {
@@ -6219,22 +6219,22 @@ div.content-block p.content-header {
 }
 @media (min-width: 0px) and (max-width: 767px) {
   div.content-block p.content-header {
-    font-size: 1.05em;
+    font-size: 0.56em;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   div.content-block p.content-header {
-    font-size: 1.2em;
+    font-size: 0.84em;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   div.content-block p.content-header {
-    font-size: 1.35em;
+    font-size: 1.12em;
   }
 }
 @media (min-width: 1200px) and (max-width: 100000000px) {
   div.content-block p.content-header {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 }
 div.content-block p.content-description {
